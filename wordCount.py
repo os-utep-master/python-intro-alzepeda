@@ -17,6 +17,9 @@ if input.mode == "r":
         elif "'" in iword:
             list.append(iword[0:iword.index("'")])
             list.append(iword[iword.index("'") + 1:len(iword)])
+        elif '"' in iword:
+            list.append(iword[0:iword.index('"')])
+            list.append(iword[iword.index('"') + 1:len(iword)])
         elif "," in iword:
             list.append(iword[0:iword.index(",")])
         elif "." in iword:
